@@ -1,0 +1,52 @@
+# ───────────────────────────────────────────────────────────
+#  Internal / planning docs — NOT for the public GitHub repo
+# ───────────────────────────────────────────────────────────
+.claude/
+PRD.md
+PROJECT_PLAN.md
+assignment.txt
+Axis.pdf
+PRD_WhatsApp_eKYC_v1.pdf
+*.docx
+
+# PRD-generator tooling (lives at repo root, internal only)
+generate_prd.js
+/package.json
+/package-lock.json
+/node_modules/
+pm-skills-main copy/
+
+# ───────────────────────────────────────────────────────────
+#  Secrets — never commit
+# ───────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+**/.env.local
+
+# ───────────────────────────────────────────────────────────
+#  Node / Next.js build artifacts
+# ───────────────────────────────────────────────────────────
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/dist/
+*.tsbuildinfo
+**/next-env.d.ts
+
+# ───────────────────────────────────────────────────────────
+#  ML dataset — large / not ours to redistribute
+#  (the generated src/data/clusters.json IS committed — it's .json, not .csv)
+# ───────────────────────────────────────────────────────────
+*.csv
+
+# ───────────────────────────────────────────────────────────
+#  OS / editor junk
+# ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+.vscode/
+.idea/
